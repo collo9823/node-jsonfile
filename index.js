@@ -78,11 +78,16 @@ function writeFileSync (file, obj, options = {}) {
   return fs.writeFileSync(file, str, options)
 }
 
+//CREO EL WRITE
+const write = writeFileSync;
+
 const jsonfile = {
   readFile,
   readFileSync,
   writeFile,
-  writeFileSync
+  writeFileSync,
+  write
+  // writeFileSync: write
 }
 
 module.exports = jsonfile
